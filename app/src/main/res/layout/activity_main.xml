@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/safeEarth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ightday_bg"
+        tools:layout_editor_absoluteX="-108dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <View
+        android:id="@+id/pollutedEarth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/darknight_bg"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/bgapp1"
+        android:layout_width="252dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pollutedEarth"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/safeEarth"
+        app:layout_constraintVertical_bias="0.84"
+        app:srcCompat="@drawable/ic_sun" />
+
+    <com.mahfa.dnswitch.DayNightSwitch
+        android:id="@+id/switchkey"
+        android:layout_width="194dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/daylandscape"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/day_landscape" />
+
+    <ImageView
+        android:id="@+id/factoryImage"
+        android:layout_width="263dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812"
+        app:srcCompat="@drawable/ic_factory" />
+
+    <ImageView
+        android:id="@+id/nightlandscape"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/pollutedEarth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/night_landscape" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

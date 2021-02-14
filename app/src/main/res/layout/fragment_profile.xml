@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            style="@style/viewParent.headerText"
+            android:layout_width="247dp"
+            android:text="Profile and Settings" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileCircleImageView"
+                android:layout_width="73dp"
+                android:layout_height="78dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_edit_profile" />
+
+
+            <TextView
+                android:id="@+id/tvFirstName"
+                style="@style/viewParent.headerText"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/profileCircleImageView"
+                android:text="Guest"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvLastName"
+                style="@style/viewParent.headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/tvFirstName"
+                android:text="User"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/viewParent.headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="53dp"
+                android:layout_toRightOf="@id/profileCircleImageView"
+                android:text="Guestuser@catchyourmeal.com"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="Account"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/logout"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#43C8BEBE"
+
+            android:drawableLeft="@drawable/ic_logout"
+            android:text="Logout" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="Notifications"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Switch
+            android:id="@+id/notfication"
+            style="@style/settingsText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#43C8BEBE"
+            android:checked="true"
+            android:drawableLeft="@drawable/ic_notifications_black_24dp"
+            android:text="Notifications" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="Vehicles"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/manage_vehcile"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#43C8BEBE"
+            android:drawableLeft="@drawable/ic_vehicle"
+            android:text="Manage Vehicles" />
+
+
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="Help and Support"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/about_us"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#43C8BEBE"
+            android:drawableLeft="@android:drawable/ic_dialog_info"
+            android:drawableTint="#732332"
+            android:text="About us" />
+
+        <TextView
+            android:id="@+id/supporthelp"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#43C8BEBE"
+            android:drawableLeft="@drawable/ic_lifebuoy_24dp"
+            android:text="Help and Support" />
+
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="App ver 1.0.0"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+</ScrollView>

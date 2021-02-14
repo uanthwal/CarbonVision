@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.dal.carbonfootprint.dashboard.DashBoardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+
+    <fragment
+        android:id="@+id/navigation_trips"
+        android:name="com.dal.carbonfootprint.trips.TripsFragment"
+        android:label="@string/title_travel"
+        tools:layout="@layout/fragment_trips" >
+        <action
+            android:id="@+id/action_navigation_trips_to_navigation_editTrip"
+            app:destination="@id/navigation_addTrip" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.dal.carbonfootprint.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_faq"
+            app:destination="@id/navigation_faq" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_aboutus"
+            app:destination="@id/navigation_aboutus" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_vehcileinfo"
+            app:destination="@id/navigation_vehcileinfo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_faq"
+        android:name="com.dal.carbonfootprint.profile.FAQFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_faqsact" />
+
+    <fragment
+        android:id="@+id/navigation_aboutus"
+        android:name="com.dal.carbonfootprint.profile.aboutusFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_aboutus" />
+
+    <fragment
+        android:id="@+id/navigation_vehcileinfo"
+        android:name="com.dal.carbonfootprint.profile.VehcileInfoEditActivity"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_vehcileinfo" />
+
+    <fragment
+        android:id="@+id/navigation_addTrip"
+        android:name="com.dal.carbonfootprint.trips.AddTripFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_addtrips" />
+
+</navigation>

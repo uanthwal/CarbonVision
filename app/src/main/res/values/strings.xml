@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Carbon Vision</string>
+    <string name="slogan">Know your Vechile carbon footprint</string>
+    <string name="powered_by">Caron Footprint Inc.</string>
+    <string name="title_travel">Travel History</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+        <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="About">Our team is aiming to develop Catch your Meal, a mobile application that will enable
+students to create customisable meal plans and have them delivered to their
+doorsteps.
+Ethnic food will be prepared in a dedicated kitchen, and delivered to the students’
+residences. Students will be able to create lunch and dinner meal plans by selecting
+dishes from a wide range of South Asian dishes. Student will be able to select delivery
+dates and times and change them within a reasonable time before delivery.</string>
+</resources>

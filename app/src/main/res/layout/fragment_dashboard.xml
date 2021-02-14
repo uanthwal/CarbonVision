@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context=".dashboard.DashBoardFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/baloo"
+            android:text="Carbon Emission Report"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="35sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/text_home2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/text_home"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baloo"
+            android:text="CO2 Emission for the Year"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+
+        <Spinner
+            android:id="@+id/years_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_home2"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="306dp"
+            android:layout_below="@+id/years_spinner"
+            android:layout_marginTop="15dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_below="@+id/chart"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+</ScrollView>

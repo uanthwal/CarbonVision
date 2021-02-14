@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "858505387678",
+    "project_id": "carbonvision-415d9",
+    "storage_bucket": "carbonvision-415d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858505387678:android:1872df0e4e275f8bed258f",
+        "android_client_info": {
+          "package_name": "com.dal.carbonfootprint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858505387678-b32ih2fjn6u33g2h56fdj35p1o4viigi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPrfvny6i-bPAnsrBbiqybZNJ9XqSxXFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858505387678-b32ih2fjn6u33g2h56fdj35p1o4viigi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
